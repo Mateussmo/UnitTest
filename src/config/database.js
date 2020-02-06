@@ -3,10 +3,6 @@ require('dotenv').config({
   path: process.env.NODE_ENV === "test" ? '.env.test' : '.env',
 });
 
-
-console.log(process.env.NODE_ENV);
-console.log(process.env.DB_DIALECT);
-
 module.exports = {
   host: process.env.DB_HOST,
   username:process.env.DB_USER,
